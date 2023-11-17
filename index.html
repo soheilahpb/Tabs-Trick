@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="w-full 2xl:container m-auto bg-[#F1F5F8]">
+    <section class="p-8 ">
+        <div class="flex flex-wrap">
+            <h1 class="w-full flex justify-center items-center text-4xl uppercase font-bold font-sans my-2 text-center">about</h1>
+            <p class="w-full flex justify-center items-center text-2xl capitalize font-light font-sans my-2 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, totam!</p>
+        </div>
+        <div class="flex flex-wrap mt-8">
+            <div class="w-full md:w-1/2  p-8">
+                <figure class="h-[300px]">
+                    <img src="img/hero-bcg.jpeg" alt="" class="w-full h-full object-cover rounded-[6px]">
+                </figure>
+            </div>
+            <!-- this division has JS! -->
+            <div class="tab w-full md:w-1/2  p-8 rounded-[6px]">
+                <ul class="w-full flex list-none items-center justify-center  rounded-[10px]">
+                    <li onclick="TabMenu(event)" data-name="history" class="capitalize w-1/3 h-full  flex items-center justify-center overflow-hidden  bg-white py-2 rounded-tl-[6px] duration-500 hover:text-[#49A6E9] cursor-pointer">history</li>
+                    <li onclick="TabMenu(event)" data-name="vision" class="capitalize w-1/3 h-full  flex items-center justify-center overflow-hidden bg-[#afc2d6] py-2 duration-500 hover:text-[#49A6E9] cursor-pointer">vision</li>
+                    <li onclick="TabMenu(event)" data-name="goals" class="capitalize w-1/3 h-full  flex items-center justify-center overflow-hidden bg-[#afc2d6] py-2 rounded-tr-[6px] duration-500 hover:text-[#49A6E9] cursor-pointer">goals</li>
+                </ul>
+                <div class="box w-full relative">
+                    <p id="history" class=" font-sans text-justify p-6 absolute top-0 duration-500 opacity-1 bg-white rounded-b-[10px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore veritatis error amet, quibusdam inventore, eos maiores ratione sunt rem ullam placeat quisquam exercitationem aliquid delectus illo vitae dicta dolore magnam perferendis earum! Consectetur error ratione asperiores impedit fuga cumque magni! Nostrum voluptatum sed odit tenetur ipsam, error excepturi quisquam facilis architecto maxime hic quo omnis sit a ullam expedita optio placeat autem corporis voluptatem nesciunt, obcaecati deserunt ad! Praesentium consectetur molestias odio, fugiat a neque asperiores? Quam odio odit et aut a? Numquam ea voluptatem fugiat illo veritatis et asperiores deserunt?</p>
+                    <p id="vision" class=" font-sans text-justify p-6 absolute top-0 duration-500 opacity-0 bg-white rounded-b-[10px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit soluta necessitatibus ratione, est sapiente quisquam maiores quas tempora accusamus iste labore nulla beatae? Debitis natus officia pariatur, officiis ut quasi id quam repellendus nobis distinctio? Maxime magnam voluptatem ut recusandae temporibus ipsa eius! Itaque delectus, est in unde, temporibus animi perspiciatis magni repellat vitae facilis debitis ex dolorem voluptas ipsam fugit? Illum sapiente recusandae doloremque. Iste quod quasi saepe impedit.</p>
+                    <p id="goals" class=" font-sans text-justify p-6 absolute top-0 duration-500 opacity-0 bg-white rounded-b-[10px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, suscipit rerum. Dolorum, perspiciatis sit suscipit mollitia sint fugit obcaecati corrupti excepturi totam ducimus optio deleniti commodi dolore atque sapiente? Consequatur laudantium veritatis ipsam expedita commodi autem quidem natus, id blanditiis minus vero suscipit beatae, eius quae, mollitia earum? Eius ad reprehenderit numquam corporis suscipit perspiciatis quidem ut deserunt voluptatum vel velit dolore cumque quaerat culpa at labore, saepe inventore quam est aliquid. Blanditiis rerum temporibus doloribus officiis, totam minus odit a? Labore in alias amet sequi accusamus possimus quasi laudantium! Eum eveniet corporis, quos saepe aliquam alias, vero sit voluptas veritatis doloremque mollitia. Totam voluptates nemo debitis repellat ullam beatae veritatis molestiae et dicta fuga dolorem ad labore a sint quisquam, fugit iure praesentium provident.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="javascript/master.js"></script>
+</html>
